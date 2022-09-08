@@ -2,10 +2,12 @@ import '../../index.css';
 import { useState } from 'react';
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../Firebase/firebaseConfig';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Signup = (props) =>{
 
+    const navigate = useNavigate()
     const data = {
         pseudo: '',
         email: '',
@@ -26,12 +28,12 @@ const Signup = (props) =>{
         createUserWithEmailAndPassword(auth, email,password)
         .then(user =>{
             setLoginData({...data});
+            navigate('/welcome')
         })
         .catch(error=>{
             setError(error);
             setLoginData({...data})
         })
-        // setloginData({...loginData, [e.target.id]: e.target.value})
     }
 
     const {pseudo, email, password, confirmPassword} = loginData;
@@ -39,7 +41,6 @@ const Signup = (props) =>{
     const btn = pseudo === '' || email ==='' || password ==='' || password !== confirmPassword 
     ? <button disabled>Inscription</button> : <button>Inscription</button>
 
-    // gestion erreurs
     const errorMsg = error !== '' && <span>{error.message}</span>;
 
     return(
@@ -50,6 +51,7 @@ const Signup = (props) =>{
                 </div>
                 <div className="formBoxRight">
                     <div className="formContent">
+                    {errorMsg}
                     <h2>Inscription</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="inputBox">
@@ -70,6 +72,9 @@ const Signup = (props) =>{
                             </div>
                             {btn}
                         </form>
+                        <div className='linkContainer'>
+                            <Link className='simpleLink' to="/login">Déjà inscrit? Connectez-vous.</Link>
+                        </div>
                     </div>
                 </div>
             </div>
