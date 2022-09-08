@@ -32,8 +32,10 @@ const Logout = () =>{
                     <input 
                     onChange={handleChange}
                     type="checkbox"
-                    checked= {checked}/>
+                    checked= {checked}
+                    />
                     <span className='lever'></span>
+                    Deconnexion
                 </label>
         </div>
       </div>
