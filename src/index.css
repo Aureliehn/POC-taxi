@@ -99,12 +99,12 @@ main {
 .welcome-bg {
   margin: 0;
   padding: 0;
-  background-color: var(--white-color);
+  background-color: var(--light-grey-color);
   display: flex;
   justify-content: center;
 }
 .welcome-container {
-  background-color: var(--white-color);
+  background-color: var(--light-grey-color);
   padding: 30px;
   flex: 0 1 80%;
   display: flex;
@@ -399,11 +399,15 @@ button[disabled]:hover {
 
 
 /* GLOBAL */
+
 .d-flex{
   display: flex;
 }
 .justify-content-between{
   justify-content: space-between;
+}
+.d-block{
+  display: block;
 }
 
 /* LOGOUT SWITCH */
@@ -451,3 +455,96 @@ button[disabled]:hover {
   }
 }
 /* END LOADER */
+
+/* MAP */
+.formBoxLeftMap {
+  min-height: 500px;
+  flex: 0 1 50%;
+}
+.formBoxRightMap {
+  flex: 0 1 50%;
+  padding: 1em;
+}
+.mapBox {
+  width: 100%;
+  height: 500px;
+  z-index: 10;
+  
+}
+/* Form map buttons */
+.formMapContent button {
+  margin-left: 0;
+  /* display: block; */
+  margin: 0 auto 20px;
+  min-width: 150px;
+  background-color: transparent;
+  color: var(--white-color);
+  padding: 7px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.formMapContent button:hover {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled],
+button:disabled:hover,
+button[disabled]:hover {
+  border: 1px solid var(--light-grey-color);
+  background-color: var(--light-grey-color);
+  color: var(--dark-grey-color);
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.linkMapContainer {
+  height: 50px;
+  margin-top: 35px;
+  padding-top: 15px;
+  border-top: 1px dashed black;
+}
+.formMapContent .inputBox {
+  position: relative;
+  height: 80px;
+}
+
+.formMapContent .inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 17px;
+  color: var(--red-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid var(--white-color);
+  outline: none;
+}
+
+.formMapContent .inputBox label {
+  color: var(--white-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 17px;
+  pointer-events: none;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.formMapContent .inputBox input:focus~label,
+.formMapContent .inputBox input:valid~label {
+  top: -30px;
+  left: 0;
+  color: var(--white-color) ;
+  font-size: 16px;
+  font-style: italic;
+}
