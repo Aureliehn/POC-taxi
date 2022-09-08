@@ -146,7 +146,7 @@ main {
 
 .formBoxLeftForget {
   min-height: 500px;
-  /* background-image: url(images/deadpool.png); */
+  /* background-image: url(images/race-car.png); */
   background-repeat: no-repeat;
   background-position: center center;
   flex: 0 1 50%;
@@ -403,3 +403,12 @@ button[disabled]:hover {
 .justify-content-between{
   justify-content: space-between;
 }
+
+/* LOGOUT SWITCH */
+.logoutContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+/* END LOGOUT SWITCH */

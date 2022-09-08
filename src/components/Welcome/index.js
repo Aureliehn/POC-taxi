@@ -1,8 +1,12 @@
+import Logout from "../logout";
+import Map from '../Map'
+
 const Welcome = () =>{
     return(
         <div className="welcome-bg">
             <div className="welcome-container">
-            welcome
+                <Logout />
+                <Map />
             </div>
 
         </div>
