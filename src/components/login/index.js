@@ -56,7 +56,8 @@ const Login = () =>{
                                 {btn ? <button>Connexion</button> : <button disabled>Connexion</button>}
                             </form>
                             <div className='linkContainer'>
-                                <Link className='simpleLink' to="/signup">Nouveau sur TAXI service? Inscrivez-vous.</Link>
+                                <Link className='simpleLink' to="/signup">Nouveau sur TAXI service? Inscrivez-vous.</Link><br></br>
+                                <Link className='simpleLink' to="/forgetPassword">Mot de passe oublié? Cliquez ici.</Link>
                             </div>
                         </div>
                     </div>
