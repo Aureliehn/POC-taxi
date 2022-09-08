@@ -130,7 +130,7 @@ main {
 
 .formBoxLeftSignup {
   min-height: 500px;
-  /* background-image: url(images/ironman.png); */
+  background-image: url(assets/taxi.png);
   background-repeat: no-repeat;
   background-position: center center;
   flex: 0 1 50%;
