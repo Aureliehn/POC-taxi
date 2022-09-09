@@ -20,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:api": "json-server --watch src/components/models/db.json --port 3004",
+    "start:apiUser": "json-server --watch src/components/models/dbUsers.json --port 3001"
   },
   "eslintConfig": {
     "extends": [

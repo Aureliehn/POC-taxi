@@ -1,16 +1,22 @@
 {
-    "locations": [
-      [
-        "lyon",
-        "craponne"
-      ],
-      [
-        "chaponost",
-        "dardilly"
-      ],
-      [
-        "lyon",
-        "lyon"
-      ]
+  "locations": [
+    {
+      "id": 1,
+      "depature": "Bulbizarre",
+      "finish": 25,
+      "pseudo": 5,
+      "mail": "test@test"
+    },
+    [
+      "lyon",
+      "lyon",
+      "aurelhn"
+    ],
+    [
+      "lyon",
+      "lyon",
+      "aurelhn",
+      "haureln@protonmail.com"
     ]
-  }
+  ]
+}

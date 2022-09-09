@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "pseudo": "Bulbizarre",
+      "email": 25,
+      "password": 5
+    },
+    {
+      "pseudo": "test",
+      "email": "test@test.fr",
+      "password": "testtest",
+      "confirmPassword": "testtest",
+      "id": 2
+    }
+  ]
+}
